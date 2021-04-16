@@ -113,11 +113,9 @@ Plotly.d3.csv('../static/data/overall.csv', function (err, rows) {
       // "titlefont": {
       //   "size": 23.5
       // },
-      xaxis: {
-        range: ["2019-01-01", "2020-12-31"],
-      },
-      yaxis: {
-        autorange: true
+      // autosize: true,
+      margin: {
+        r:250
       },
         showlegend: false,
       legend: {
@@ -182,12 +180,15 @@ Plotly.d3.csv('../static/data/overall.csv', function (err, rows) {
       //   "titlefont": {
       //     "size": 23.5
       //   },
-      xaxis: {
-        range: ["2019-01-01", "2020-12-31"],
-      },
+      // xaxis: {
+      //   range: ["2019-01-01", "2020-12-31"],
+      // },
       yaxis: {
         tickformat: ',.0%',
         range: [0, 1]
+      },
+      margin: {
+        r:250
       },
       yaxis2: {
         autorange: true,
@@ -240,11 +241,14 @@ Plotly.d3.csv('../static/data/overall.csv', function (err, rows) {
       //   "size": 23.5
       // },
       barmode: 'stack',
-      xaxis: {
-        range: ["2019-01-01", "2020-12-31"],
-      },
-      yaxis: {
-        autorange: true
+      // xaxis: {
+      //   range: ["2019-01-01", "2020-12-31"],
+      // },
+      // yaxis: {
+      //   autorange: true
+      // },
+      margin: {
+        r:250
       },
       showlegend: false,
       legend: {

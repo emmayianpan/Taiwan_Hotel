@@ -110,12 +110,15 @@ Plotly.d3.csv('../static/data/hotel.csv', function (err, rows) {
       // "titlefont": {
       //   "size": 23.5
       // },
-      xaxis: {
-        range: ["2019-01-01", "2020-12-31"],
+      margin: {
+        r:250
       },
-      yaxis: {
-        autorange: true
-      },
+      // xaxis: {
+      //   range: ["2019-01-01", "2020-12-31"],
+      // },
+      // yaxis: {
+      //   autorange: true
+      // },
       showlegend: false,
       legend: {
         y: 1.2,
@@ -179,15 +182,18 @@ Plotly.d3.csv('../static/data/hotel.csv', function (err, rows) {
       //   "titlefont": {
       //     "size": 23.5
       //   },
-      xaxis: {
-        range: ["2019-01-01", "2020-12-31"],
+      margin: {
+        r:250
       },
+      // xaxis: {
+      //   range: ["2019-01-01", "2020-12-31"],
+      // },
       yaxis: {
         tickformat: ',.0%',
         range: [0, 1]
       },
       yaxis2: {
-        autorange: true,
+        // autorange: true,
         titlefont: { color: 'rgb(148, 103, 189)' },
         tickfont: { color: 'rgb(148, 103, 189)' },
         overlaying: 'y',
@@ -236,13 +242,16 @@ Plotly.d3.csv('../static/data/hotel.csv', function (err, rows) {
       // "titlefont": {
       //   "size": 23.5
       // },
+      margin: {
+        r:250
+      },
       barmode: 'stack',
-      xaxis: {
-        range: ["2019-01-01", "2020-12-31"],
-      },
-      yaxis: {
-        autorange: true
-      },
+      // xaxis: {
+      //   range: ["2019-01-01", "2020-12-31"],
+      // },
+      // yaxis: {
+      //   autorange: true
+      // },
       showlegend: false,
       legend: {
         y: 1.2,
