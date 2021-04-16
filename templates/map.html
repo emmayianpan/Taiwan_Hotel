@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <title>Hotel Map</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description"
+        content="Admindek Bootstrap admin template made using Bootstrap 4 and it has huge amount of ready made feature, UI components, pages which completely fulfills any dashboard needs." />
+    <meta name="keywords"
+        content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="colorlib" />
+
+    <link rel="icon" href="https://st3.depositphotos.com/4201469/18179/v/1600/depositphotos_181794494-stock-illustration-outline-icon-hotel-building-hotel.jpg" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:500,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="../static/css/waves.min.css" type="text/css" media="all">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/feather.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/themify-icons.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/icofont.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="../static/css/leaflet.css" />
+    <script src="../static/js/leaflet.js" type="3d0344a6030807c6f12281d7-text/javascript"></script>
+
+    <link href='../static/css/mapbox-gl.css' rel='stylesheet' />
+    <script src='../static/js/mapbox-gl.js' type="3d0344a6030807c6f12281d7-text/javascript"></script>
+
+    <script src='../static/js/leaflet.markercluster.js' type="3d0344a6030807c6f12281d7-text/javascript"></script>
+    <link href='../static/css/markercluster.css' rel='stylesheet' />
+    <link href='../static/css/markercluster.default.css' rel='stylesheet' />
+
+    <script src="realworld.388.html" type="3d0344a6030807c6f12281d7-text/javascript"></script>
+
+
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"
+        integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+        crossorigin="" />
+
+    <!--Marker Cluster CSS-->
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="../static/css/pages.css">
+    <style>
+        #map {
+            width: 100%;
+            height: 600px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="loader-bg">
+        <div class="loader-bar"></div>
+    </div>
+
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
+                        <a href="/">
+                            <img src="../static/jpg/taiwan.jpg" alt="Theme-Logo" style="width: 45%; max-width: 1000px;">
+                        </a>
+                        <a class="mobile-menu" id="mobile-collapse" href="#!">
+                            <i class="feather icon-menu icon-toggle-right"></i>
+                        </a>
+                        <a class="mobile-options waves-effect waves-light">
+                            <i class="feather icon-more-horizontal"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-right">
+                            <li>
+                                <a href="#!"
+                                    onclick="if (!window.__cfRLUnblockHandlers) return false; javascript:toggleFullScreen()"
+                                    class="waves-effect waves-light" data-cf-modified-d2d1d6e2f87cbebdf4013b26-="">
+                                    <i class="full-screen feather icon-maximize"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+
+            <div class="pcoded-main-container">
+                <div class="pcoded-wrapper">
+
+                    <nav class="pcoded-navbar">
+                        <div class="nav-list">
+                            <div class="pcoded-inner-navbar main-menu">
+                                <div class="pcoded-navigation-label">Navigation</div>
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="pcoded-hasmenu">
+                                        <a href="/" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="feather icon-map"></i></span>
+                                            <span class="pcoded-mtext">Market Overview</span>
+                                        </a>
+
+                                    </li>
+                                    <li class="pcoded-hasmenu">
+                                        <a href="/hotel_map" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="feather icon-map"></i></span>
+                                            <span class="pcoded-mtext">Hotel Map</span>
+                                            <!-- <span class="pcoded-badge label label-warning">NEW</span> -->
+                                        </a>
+
+                                    </li>
+                                    <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon">
+                                                <i class="feather icon-pie-chart"></i>
+                                            </span>
+                                            <span class="pcoded-mtext">Performance</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class="">
+                                                <a href="/area_performance" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Area</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="/hotel_performance" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">Individuals</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="pcoded-hasmenu">
+                                        <a href="/resources" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon"><i class="feather icon-inbox"></i></span>
+                                            <span class="pcoded-mtext">Resources/Data</span>
+                                        </a>
+
+                                    </li>
+                                    <li class="pcoded-hasmenu">
+                                        <a href="javascript:void(0)" class="waves-effect waves-dark">
+                                            <span class="pcoded-micon">
+                                                <i class="feather icon-mail"></i>
+                                            </span>
+                                            <span class="pcoded-mtext">Contact</span>
+                                        </a>
+                                        <ul class="pcoded-submenu">
+                                            <li class="">
+                                                <a href="/contact" class="waves-effect waves-dark">
+                                                    <span class="pcoded-mtext">About Me</span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="https://www.linkedin.com/in/emmayianpan/"
+                                                    class="waves-effect waves-dark">
+                                                    <span class="iconify" data-icon="feather-linkedin"
+                                                        data-inline="false"></span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="https://github.com/emmayianpan"
+                                                    class="waves-effect waves-dark">
+                                                    <span class="iconify" data-icon="feather-github"
+                                                        data-inline="false"></span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <div class="pcoded-navigation-label">Other</div>
+                                <ul class="pcoded-item pcoded-left-item">
+                                    <li class="">
+                                        <a href="javascript:void(0)" class="disabled waves-effect waves-dark">
+                                            <span class="pcoded-micon">
+                                                <i class="feather icon-power"></i>
+                                                <b>D</b>
+                                            </span>
+                                            <span class="pcoded-mtext">Disabled Menu</span>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </nav>
+
+                    <!--Navigation Ends-->
+
+                    <div class="pcoded-content">
+
+                        <div class="page-header card">
+                            <div class="row align-items-end">
+                                <div class="col-lg-8">
+                                    <div class="page-header-title">
+                                        <i class="feather icon-map bg-c-red"></i>
+                                        <div class="d-inline">
+                                            <h5>Hotel Map</h5>
+                                            <span>The map shows the location of listed hotels in Taiwan provided from Tourism Bureau. 
+                                                There are three hotels located outside of main island of Taiwan including two hotels in Penghu and one hotel in Kinmen.
+                                            The data is collected by December, 2020 (126 hotels in total and 28,780 of total room counts) 
+                                            and is not included Motel or other types of accommodations.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="page-header-breadcrumb">
+                                        <ul class=" breadcrumb breadcrumb-title">
+                                            <li class="breadcrumb-item">
+                                                <a href="/"><i class="feather icon-home"></i></a>
+                                            </li>
+                                            <li class="breadcrumb-item"><a href="/hotel_map">Hotel Maps</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="pcoded-inner-content">
+                            <div class="main-body">
+                                <div class="page-wrapper">
+
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                                <div class="card">
+                                                    <div class="card-block">
+                                                        <div id="map"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="styleSelector">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Default-->
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/jquery-ui.min.js"></script>
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/popper.min.js"></script>
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/bootstrap.min.js"></script>
+    <script src="../js/waves.min.js" type="3d0344a6030807c6f12281d7-text/javascript"></script>
+
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/jquery.slimscroll.js"></script>
+
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/modernizr.js"></script>
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/css-scrollbars.js"></script>
+
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/leaflet-mapbox-gl.js"></script>
+
+    <script src="../static/js/pcoded.min.js" type="3d0344a6030807c6f12281d7-text/javascript"></script>
+    <script src="../static/js/vertical-layout.min.js" type="3d0344a6030807c6f12281d7-text/javascript"></script>
+    <script src="../static/js/jquery.mcustomscrollbar.concat.min.js" type="3d0344a6030807c6f12281d7-text/javascript"></script>
+    <script type="3d0344a6030807c6f12281d7-text/javascript">
+    setTimeout(function(){
+        var map = L.map('map', {
+            maxZoom: 17
+        }).setView([-37.821, 175.219], 16);
+        L.tileLayer('png/%7by%7d.png', {
+            attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var greenIcon = L.icon({
+            iconUrl: '../files/assets/images/social/img1.jpg',
+            shadowUrl: '../files/assets/images/social/profile.jpg',
+
+            iconSize: [38, 95], // size of the icon
+            shadowSize: [50, 64], // size of the shadow
+            iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+            shadowAnchor: [4, 62], // the same for the shadow
+            popupAnchor: [-3, -76] // point from which the popup should open relative to the iconAnchor
+        });
+
+        var gl = L.mapboxGL({
+            accessToken: 'no-token',
+            style: 'https://raw.githubusercontent.com/osm2vectortiles/mapbox-gl-styles/master/styles/bright-v9-cdn.json'
+        }).addTo(map);
+
+        var LeafIcon = L.Icon.extend({
+            options: {
+                shadowUrl: '../files/assets/images/social/img1.jpg',
+                iconSize: [38, 95],
+                shadowSize: [50, 64],
+                iconAnchor: [22, 94],
+                shadowAnchor: [4, 62],
+                popupAnchor: [-3, -76]
+            }
+        });
+        var markers = L.markerClusterGroup();
+
+        for (var i = 0; i < addressPoints.length; i++) {
+            var a = addressPoints[i];
+            var title = a[2];
+            var marker = L.marker(new L.LatLng(a[0], a[1]), {
+                title: title
+            });
+            marker.bindPopup(title);
+            markers.addLayer(marker);
+        }
+
+        map.addLayer(markers);
+    },350);
+</script>
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/script.js"></script>
+    <script type="3d0344a6030807c6f12281d7-text/javascript" src="../static/js/map.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"
+        type="3d0344a6030807c6f12281d7-text/javascript"></script>
+    <script type="3d0344a6030807c6f12281d7-text/javascript">
+
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+    <script src="../static/js/rocket-loader.min.js" data-cf-settings="3d0344a6030807c6f12281d7-|49" defer=""></script>
+
+    <!--iconfy-->
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <!--d3 JS-->
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.js"></script>
+
+    <!--Marker Cluster JS-->
+    <script type="text/javascript"
+        src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+
+    <!--Leaflet JS-->
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+        integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+        crossorigin=""></script>
+
+</body>
+
+</html>

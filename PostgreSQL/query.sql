@@ -1,0 +1,25 @@
+CREATE TABLE combine20 AS(
+	SELECT*FROM jan20
+		UNION
+	SELECT*FROM feb20
+		UNION
+	SELECT*FROM mar20
+		UNION
+	SELECT*FROM apr20
+		UNION
+	SELECT*FROM may20
+		UNION
+	SELECT*FROM jun20
+		UNION
+	SELECT*FROM jul20
+		UNION
+	SELECT*FROM aug20
+		UNION
+	SELECT*FROM sep20
+); 
+
+
+
+COPY (SELECT*FROM combine20) 
+	To 'C:\Users\emmayianpan\Desktop\Taiwan Hotel\static\data\2020\combine20.csv' 
+	With CSV DELIMITER ',' HEADER;
