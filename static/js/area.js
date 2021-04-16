@@ -81,12 +81,12 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       mode: 'lines+markers',
       name: 'Demand',
       marker: {
-        size: 12,
+        size: 10,
         opacity: 0.5
       },
       line: {
         shape: 'spline',
-        width: 4
+        width: 2.5
       },
       type: 'scatter'
     };
@@ -97,12 +97,12 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       mode: 'lines+markers',
       name: 'Supply',
       marker: {
-        size: 12,
+        size: 10,
         opacity: 0.5
       },
       line: {
         shape: 'spline',
-        width: 4
+        width: 2.5
       }
     };
 
@@ -114,24 +114,23 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       //   "size": 23.5
       // },
       xaxis: {
-        range: ["2020-01-01", "2020-12-31"],
+        range: ["2019-01-01", "2020-12-31"],
       },
       yaxis: {
         autorange: true
       },
+      showlegend: false,
       legend: {
         y: 1.2,
         // traceorder: 'reversed',
         font: {
           size: 10
-        }
+        } 
       }
     };
 
-    Plotly.newPlot('plotdiv', data1, layout1, {
-      displaylogo: false
-      , showTips: false
-    });
+
+    Plotly.newPlot('plotdiv', data1, layout1, {responsive: true});
 
     //Occ/ADR/RevPAR
     var trace3 = {
@@ -140,7 +139,7 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       name: 'Occupancy',
       type: 'bar',
       marker: {
-        size: 12,
+        size: 10,
         opacity: 0.5
       }
     };
@@ -151,12 +150,12 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       mode: 'lines+markers',
       name: 'ADR',
       marker: {
-        size: 12,
+        size: 10,
         opacity: 0.5
       },
       line: {
         shape: 'spline',
-        width: 4
+        width: 2.5
       },
       yaxis: 'y2',
     };
@@ -167,12 +166,12 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       mode: 'lines+markers',
       name: 'RevPAR',
       marker: {
-        size: 12,
+        size: 10,
         opacity: 0.5
       },
       line: {
         shape: 'spline',
-        width: 4
+        width: 2.5
       },
       yaxis: 'y2',
     };
@@ -185,7 +184,7 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       //     "size": 23.5
       //   },
       xaxis: {
-        range: ["2020-01-01", "2020-12-31"],
+        range: ["2019-01-01", "2020-12-31"],
       },
       yaxis: {
         tickformat: ',.0%',
@@ -198,6 +197,7 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
         overlaying: 'y',
         side: 'right'
       },
+      showlegend: false,
       legend: {
         y: 1.2,
         // traceorder: 'reversed',
@@ -207,10 +207,7 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       }
     };
 
-    Plotly.newPlot('plotdiv_p', data2, layout2, {
-      displaylogo: false
-      , showTips: false
-    });
+    Plotly.newPlot('plotdiv_p', data2, layout2, {responsive: true});
 
 
     //Revenue
@@ -245,11 +242,12 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       // },
       barmode: 'stack',
       xaxis: {
-        range: ["2020-01-01", "2020-12-31"],
+        range: ["2019-01-01", "2020-12-31"],
       },
       yaxis: {
         autorange: true
       },
+      showlegend: false,
       legend: {
         y: 1.2,
         // traceorder: 'reversed',
@@ -259,10 +257,7 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       }
     };
 
-    Plotly.newPlot('plotdiv_r', data3, layout3, {
-      displaylogo: false
-      , showTips: false
-    });
+    Plotly.newPlot('plotdiv_r', data3, layout3, {responsive: true});
 
   };
 
