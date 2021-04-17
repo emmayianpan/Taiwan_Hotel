@@ -113,9 +113,9 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       // "titlefont": {
       //   "size": 23.5
       // },
-      margin: {
-        r:250
-      },
+      // margin: {
+      //   r:250
+      // },
       // xaxis: {
       //   range: ["2019-01-01", "2020-12-31"],
       // },
@@ -186,9 +186,9 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       //   "titlefont": {
       //     "size": 23.5
       //   },
-      margin: {
-        r:250
-      },
+      // margin: {
+      //   r:250
+      // },
       // xaxis: {
       //   range: ["2019-01-01", "2020-12-31"],
       // },
@@ -246,9 +246,9 @@ Plotly.d3.csv('../static/data/area.csv', function (err, rows) {
       // "titlefont": {
       //   "size": 23.5
       // },
-      margin: {
-        r:250
-      },
+      // margin: {
+      //   r:250
+      // },
       barmode: 'stack',
       // xaxis: {
       //   range: ["2019-01-01", "2020-12-31"],

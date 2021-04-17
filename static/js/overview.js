@@ -114,9 +114,9 @@ Plotly.d3.csv('../static/data/overall.csv', function (err, rows) {
       //   "size": 23.5
       // },
       // autosize: true,
-      margin: {
-        r:250
-      },
+      // margin: {
+      //   r:250
+      // },
         showlegend: false,
       legend: {
         y: 1.2,
@@ -187,9 +187,9 @@ Plotly.d3.csv('../static/data/overall.csv', function (err, rows) {
         tickformat: ',.0%',
         range: [0, 1]
       },
-      margin: {
-        r:250
-      },
+      // margin: {
+      //   r:250
+      // },
       yaxis2: {
         autorange: true,
         titlefont: { color: 'rgb(148, 103, 189)' },
@@ -247,9 +247,9 @@ Plotly.d3.csv('../static/data/overall.csv', function (err, rows) {
       // yaxis: {
       //   autorange: true
       // },
-      margin: {
-        r:250
-      },
+      // margin: {
+      //   r:250
+      // },
       showlegend: false,
       legend: {
         y: 1.2,
