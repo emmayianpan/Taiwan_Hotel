@@ -18,6 +18,11 @@
 <strong><i> The website is to analyze Taiwan hotel market and to visualize data in a monthly basis for hoteliers to review competitors performance, pricing and seasonality from macro and micro prospectives, and for potential investors to receive basic information of current market trend in hotel industry.</i></strong>
 
 ## Prerequisites 
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
 
 ## Built With
 * [Python Pandas](https://pandas.pydata.org/) 
@@ -53,5 +58,3 @@ The website shows the visulization of:
 Yi An Pan (Emma)
 * [Linkedin](https://www.linkedin.com/in/emmayianpan/) 
 * [GitHub](https://github.com/emmayianpan)
-
-
