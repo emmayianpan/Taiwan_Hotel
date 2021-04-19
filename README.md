@@ -60,5 +60,7 @@ The website shows the visulization of:
 Yi An Pan (Emma)
 * [Linkedin](https://www.linkedin.com/in/emmayianpan/) 
 * [GitHub](https://github.com/emmayianpan)
+
+<br>
 * The website template was designed by [baotm](https://github.com/baotm/admindek)
 
