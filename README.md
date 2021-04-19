@@ -34,5 +34,5 @@
   <img src="static/image/screenshot.JPG" alt="Logo" width="700" height="350">
 </a>
 
-The website is to analyze Taiwan hotel market and to visualize data in a monthly basis for hoteliers to review competitors performance, pricing and seasonality from macro and micro prospectives, and for potential investors to receive basic information of current market trend in hotel industry.
+<i> The website is to analyze Taiwan hotel market and to visualize data in a monthly basis for hoteliers to review competitors performance, pricing and seasonality from macro and micro prospectives, and for potential investors to receive basic information of current market trend in hotel industry.</i>
 
