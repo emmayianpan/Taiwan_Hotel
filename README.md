@@ -35,9 +35,23 @@
 - The website, which is operated under Tourism Bureau, Ministry of Transportation and Communications provides month-end overall performace of Taiwan hotels. The reports can be download as PDF or ODF files.
 
 ## ETL Process
+* Pull raw data from [Taiwan Hotels Database](https://taiwanstay.net.tw/) and downloaded reports as ODF files. Organized raw data for the first step.
+* Transfered into csv files, cleaned/sorted data with correct formatting and created new columns by calculation including RevPAR, Demand, etc. to complete data processing.
+* Loaded data onto PostgreSQL and merged monthly data.
+* Created another dataset for area performance by using combined data to calculate on Jupyter Notebook. 
+* Manually input data "Hotle English Name", "Address", "Longtitude", "Latitude" and "Website" from Google for Hotel Map.
+* Exported all data into csv files while the ETL processing was completed.
 
-## Data Visualization
+## Data Visualization and Flask Deployment 
+The website shows the visulization of: 
+* Taiwan Hotel Market Overall Performance 
+* Taiwan Hotel Area Performance
+* Taiwan Hotel Individual Performance
+* Hotel Location and Information 
 
 ## Created by 
+Yi An Pan (Emma)
+* [Linkedin](https://www.linkedin.com/in/emmayianpan/) 
+* [GitHub](https://github.com/emmayianpan)
 
 
