@@ -19,12 +19,17 @@
     <li>
       <a href="#about-the-project">About The Project</a>
     </li>
+    
+    <li>
+      <a href="#built-with">Built with</a>
+    </li>
+    
+    
   </ol>
 </details>
 
 
 
-<!-- ABOUT THE PROJECT -->
 ## About The Project
 
 <a href="https://taiwan-hotel.herokuapp.com/">
@@ -32,4 +37,18 @@
 </a>
 
 <i> The website is to analyze Taiwan hotel market and to visualize data in a monthly basis for hoteliers to review competitors performance, pricing and seasonality from macro and micro prospectives, and for potential investors to receive basic information of current market trend in hotel industry.</i>
+
+
+## Prerequisites 
+
+## Built with 
+
+## Data Sources
+
+## ETL Process
+
+## Data Visualization
+
+## Created by 
+
 
