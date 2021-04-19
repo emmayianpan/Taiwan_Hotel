@@ -11,9 +11,11 @@
 </p>
 
 ## About The Project
+<p align="center">
 <a href="https://taiwan-hotel.herokuapp.com/">
-  <img src="static/image/screenshot.JPG" alt="Logo" width="700" height="350">
+  <img src="static/image/screenshot.JPG" alt="Webpage Screenshot" width="1000" height="500">
 </a>
+</p>
 
 <strong><i> The website is to analyze Taiwan hotel market and to visualize data on a monthly basis for hoteliers to review competitors performance, pricing, and seasonality from macro and micro prospectives, and for potential investors to receive basic information of current market trend in hotel industry. </i></strong>
 
