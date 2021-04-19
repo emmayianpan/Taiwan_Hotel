@@ -4,11 +4,8 @@
   <a href="https://taiwan-hotel.herokuapp.com/">
     <img src="static/image/hotel.png" alt="Logo" width="80" height="80">
   </a>
-
   <h3 align="center">Data Visualization and Market Overview for Taiwan Hotel Industry</h3>
-
   <p align="center">
-    <br />
     <a href="https://taiwan-hotel.herokuapp.com/"><strong>Explore the Website »</strong></a>
   </p>
 </p>
