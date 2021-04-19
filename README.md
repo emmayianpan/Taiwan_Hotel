@@ -50,7 +50,7 @@
 * Exported all data into csv files while the ETL processing was completed.
 
 ## Data Visualization 
-The website shows the visulization of: 
+The website is presented with the visulization of: 
 * Taiwan Hotel Market Overall Performance 
 * Taiwan Hotel Area Performance
 * Taiwan Hotel Individual Performance
