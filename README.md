@@ -32,7 +32,7 @@
 
 ## Data Sources
 * [Taiwan Hotels Database](https://taiwanstay.net.tw/) 
-<p> The website, which is operated under Tourism Bureau, Ministry of Transportation and Communications provides month-end overall performace of Taiwan hotels. The reports can be download as PDF or ODF files. </p>
+<i>The website, which is operated under Tourism Bureau, Ministry of Transportation and Communications provides month-end overall performace of Taiwan hotels. The reports can be download as PDF or ODF files.</i>
 
 ## ETL Process
 
