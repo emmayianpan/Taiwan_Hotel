@@ -62,4 +62,5 @@ Yi An Pan (Emma)
 * [Linkedin](https://www.linkedin.com/in/emmayianpan/) 
 * [GitHub](https://github.com/emmayianpan)
 <br>
-<i>The website template was designed by [Taiwan Hotels Database](https://github.com/baotm/admindek)  
+
+<i> The website template is designed by [baotm](https://github.com/baotm/admindek). </i>
