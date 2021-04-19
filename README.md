@@ -17,6 +17,8 @@
 
 <i> The website is to analyze Taiwan hotel market and to visualize data in a monthly basis for hoteliers to review competitors performance, pricing and seasonality from macro and micro prospectives, and for potential investors to receive basic information of current market trend in hotel industry.</i>
 
+## Prerequisites 
+
 ## Built With
 * [Python Pandas](https://pandas.pydata.org/) 
 * [Python SQLAlchemy](https://www.sqlalchemy.org/) 
@@ -28,11 +30,9 @@
 * [Python Flask](https://flask.palletsprojects.com/en/1.1.x/) 
 * [Heroku](https://www.heroku.com/)
 
-## Prerequisites 
-
-## Built with 
-
 ## Data Sources
+* [Taiwan Hotels Database](https://taiwanstay.net.tw/) 
+<p> The website, which is operated under Tourism Bureau, Ministry of Transportation and Communications provides month-end overall performace of Taiwan hotels. The reports can be download as PDF or ODF files. </p>
 
 ## ETL Process
 
