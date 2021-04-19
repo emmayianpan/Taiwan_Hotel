@@ -39,8 +39,7 @@
 * [Heroku](https://www.heroku.com/)
 
 ## Data Sources
-* [Taiwan Hotels Database](https://taiwanstay.net.tw/) 
-- The website, which is operated under Tourism Bureau, Ministry of Transportation and Communications provides month-end overall performace of Taiwan hotels. The reports can be download as PDF or ODF files.
+* [Taiwan Hotels Database](https://taiwanstay.net.tw/) - The website, which is operated under Tourism Bureau, Ministry of Transportation and Communications provides month-end overall performace of Taiwan hotels. The reports can be download as PDF or ODF files.
 
 ## ETL Process
 * Pull raw data from [Taiwan Hotels Database](https://taiwanstay.net.tw/) and downloaded reports as ODF files. Organized raw data for the first step.
