@@ -49,7 +49,7 @@
 * Manually input data "Hotle English Name", "Address", "Longtitude", "Latitude" and "Website" from Google for Hotel Map.
 * Exported all data into csv files while the ETL processing was completed.
 
-## Data Visualization and Flask Deployment 
+## Data Visualization 
 The website shows the visulization of: 
 * Taiwan Hotel Market Overall Performance 
 * Taiwan Hotel Area Performance
