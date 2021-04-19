@@ -11,7 +11,7 @@ function makeMap() {
         maxZoom: 18,
         zoomOffset: -1,
         id: "mapbox/streets-v11",
-        accessToken: "pk.eyJ1IjoiZW1tYXlpYW5wYW4iLCJhIjoiY2tnNzhsc29xMDR2ZjJ5cW5ueDhuemphMCJ9.GdCa5tNXBRr-RBNdVoBb1w"
+        accessToken: ""
     }).addTo(myMap);
 
     d3.csv("../static/data/map.csv").then(function (response) {
