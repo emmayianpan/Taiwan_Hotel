@@ -62,5 +62,5 @@ Yi An Pan (Emma)
 * [GitHub](https://github.com/emmayianpan)
 
 ## 
-* The website template was designed by [baotm](https://github.com/baotm/admindek)
+The website template was designed by [baotm](https://github.com/baotm/admindek)
 
