@@ -18,12 +18,15 @@
 <strong><i> The website is to analyze Taiwan hotel market and to visualize data in a monthly basis for hoteliers to review competitors performance, pricing and seasonality from macro and micro prospectives, and for potential investors to receive basic information of current market trend in hotel industry.</i></strong>
 
 ## Prerequisites 
-* npm
-  ```sh
-  npm install npm@latest -g
+* Getting Started 
   ```
-
-
+  git clone https://github.com/emmayianpan/Taiwan_Hotel.git
+  ```
+* Get [API Key at Mapbox](https://docs.mapbox.com/api/overview/) and input the token into static/js/map.js 
+  ```
+  accessToken: "YOUR API KEY"
+  ```
+  
 ## Built With
 * [Python Pandas](https://pandas.pydata.org/) 
 * [Python SQLAlchemy](https://www.sqlalchemy.org/) 
